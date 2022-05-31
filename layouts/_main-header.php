@@ -1,9 +1,12 @@
 <header>
 	<div class="logo-place"><a href="index.php"><img src="assets/logo.png"></a></div>
 	<div class="search-place">
-		<input type="text" id="idbusqueda" placeholder="Encuenta lo que necesitas..." value="<?php if(isset($_GET['text'])){echo $_GET['text'];}else{echo '';} ?>">
+		<input type="text" id="idbusqueda" placeholder="Busca entre nuestros mejores dulces..." value="<?php if(isset($_GET['text'])){echo $_GET['text'];}else{echo '';} ?>">
 		<button class="btn-main btn-search" onclick="search_producto()"><i class="fa fa-search" aria-hidden="true"></i></button>
-	</div>
+	</div>	
+
+		<label>Ventas</label>
+		<a href="highcharter.htm"><button class="btn-main btn-search"><i class="fa fa-search" aria-hidden="true">  </button></i></a>
 	<div class="options-place">
 		<?php
 		if (isset($_SESSION['codusu'])) {
